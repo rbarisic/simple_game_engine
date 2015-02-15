@@ -1,6 +1,8 @@
 class Player
 	attr_accessor :x, :y, :name
 	def initialize(x, y, name)
+		# @sprite = 'assets/sprites/tv.png'
+		@sprite = Gosu::Image.new($main, 'assets/sprites/tv.png', false)	
 		@x = x
 		@y = y
 		@name = name
@@ -28,7 +30,10 @@ class Player
 				else
 					raise
 			end
-			puts "you moved from [ y: #{y_old} | x: #{x_old} ] to [ y: #{@y} | x: #{@x} ]."
 		end
+	end
+
+	def draw
+
 	end
 end

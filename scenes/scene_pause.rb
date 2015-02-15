@@ -1,0 +1,3 @@
+class ScenePause < Scene
+
+end
